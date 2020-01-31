@@ -1,0 +1,26 @@
+
+.privilege a{background-color: #fb565a;
+display:block;
+padding:20px 40px;
+width: 132px;
+height: 13px;
+color: #ffffff;
+font-family: Roboto;
+font-size: 16px;
+font-weight: 500;
+line-height: 18px;
+text-decoration:none;
+border-radius: 5px;}
+
+
+
+.footer-main li{background-color: #e1e1e1;
+display: inline-block;
+width:79px;
+height:79px;
+border-radius: 50%;
+}
+.footer-main img{position:absolute;display: block;padding-top: 30px;}
+.footer-main li:nth-child(1) img{padding-left: 25px;}
+.footer-main li:nth-child(2) img{padding-left: 33px;}
+.footer-main li:nth-child(3) img{padding-left: 30px;}
