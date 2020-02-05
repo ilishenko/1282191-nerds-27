@@ -22,7 +22,47 @@
     <main>
       <h2>Магазин готовых шаблонов<h2>
 
-      <form>
+      <form action="#" method="post" oninput="price-item.value=price.value">
+        <label for="price">Стоимость</label>
+        <br>
+        <input type="range" min="0" max="15000" step="100" id="price" name="price">
+        <br>
+        от 0
+        до
+        <output name="price-item"></output>
+
+        <p>сетка:</p>
+        <label>
+          <input type="radio" name="grid" value="adaptive">Адаптивная
+        </label>
+        <br>
+        <label>
+          <input type="radio" name="grid" value="fixed">Фиксированная
+        </label>
+        <br>
+        <label>
+          <input type="radio" name="grid" value="rubber">Резиновая
+        </label>
+        <br>
+
+        <p>особенности:</p>
+        <input type="checkbox" name="slider" id="slider-field" checked>
+        <label for="slider-field">Слайдер</label>
+        <br>
+        <input type="checkbox" name="advantage" id="advantage-field">
+        <label for="advantage-field">Блок преимуществ</label>
+        <br>
+        <input type="checkbox" name="news" id="news-field" checked>
+        <label for="news-field">Новости</label>
+        <br>
+        <input type="checkbox" name="gallery" id="gallery-field">
+        <label for="gallery-field">Галерея</label>
+        <br>
+        <input type="checkbox" name="basket" id="basket-field">
+        <label for="basket-field">Корзина</label>
+        <br>
+
+        <input type="submit" value="показать">
       </form>
 
       <section class="gallery-project">
