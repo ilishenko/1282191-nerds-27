@@ -12,55 +12,55 @@
     <a class="logo" href="#"><img src="img/logo.png" alt="Логотип" width="160" height="65"></a>
     <nav class="menu">
       <ul>
-        <li><a href="#">студия</a></li>
-        <li><a href="#">клиенты</a></li>
-        <li><a>магазин</a></li>
-        <li><a href="#">контакты</a></li>
+        <li><a href="#">Студия</a></li>
+        <li><a href="#">Клиенты</a></li>
+        <li><a>Магазин</a></li>
+        <li><a href="#">Контакты</a></li>
         <li><a class="box" href="#"><img src="img/cart-icon.svg" width="15" height="15">корзина</a></li>
       </ul>
     </nav>
   </header>
 
     <main>
-      <h2>магазин готовых шаблонов<h2>
+      <h2>Магазин готовых шаблонов<h2>
 
-      <form action="#" method="post" oninput="price-item.value=price.value">
-        <label for="price">стоимость</label>
-        <br>
-        <input type="range" min="0" max="15000" step="100" id="price" name="price">
-        <br>
-        от 0
-        до
-        <output name="price-item"></output>
+      <form  action="#" method="post" oninput="price-item.value=price.value">
+        <fieldset class="price">
+          <label for="price">Стоимость</label>
+          <input type="range" min="0" max="15000" step="100" id="price" name="price">
+          от 0
+          до
+          <output name="price-item"></output>
+        </fieldset>
 
-        <fieldset>
-          <legend>сетка:</legend>
-          <label for="adaptive-item">адаптивная</label>
+        <fieldset class="price">
+          <legend>Сетка:</legend>
+          <label for="adaptive-item">Адаптивная</label>
           <input type="radio" name="grid" id="adaptive-item" value="adaptive">
 
-          <label for="fixed-item">фиксированная</label>
+          <label for="fixed-item">Фиксированная</label>
           <input type="radio" name="grid" id="fixed-item" value="fixed">
 
-          <label for="rubber-item">резиновая</label>
+          <label for="rubber-item">Резиновая</label>
           <input type="radio" name="grid" id="rubber-item" value="rubber">
         </fieldset>
 
-        <fieldset>
-          <legend>особенности:</legend>
+        <fieldset class="price">
+          <legend>Особенности:</legend>
           <input type="checkbox" name="slider" id="slider-field" checked>
-          <label for="slider-field">слайдер</label>
+          <label for="slider-field">Слайдер</label>
 
           <input type="checkbox" name="advantage" id="advantage-field">
-          <label for="advantage-field">блок преимуществ</label>
+          <label for="advantage-field">Блок преимуществ</label>
 
           <input type="checkbox" name="news" id="news-field" checked>
-          <label for="news-field">новости</label>
+          <label for="news-field">Новости</label>
 
           <input type="checkbox" name="gallery" id="gallery-field">
-          <label for="gallery-field">галерея</label>
+          <label for="gallery-field">Галерея</label>
 
           <input type="checkbox" name="basket" id="basket-field">
-          <label for="basket-field">корзина</label>
+          <label for="basket-field">Корзина</label>
         </fieldset>
 
         <input type="submit" value="показать">
@@ -78,7 +78,7 @@
       </section>
 
       <section class="contacts">
-        <h2>контакты</h2>
+        <h2>Контакты</h2>
         <p>NERDS DESIGN STUDIO</p>
         <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19.8</p>
         <p><a href="tel:+78122757575">тел. +7(812) 275-75-75</a></p>

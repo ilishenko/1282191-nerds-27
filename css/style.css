@@ -22,6 +22,10 @@ a {
   margin-top: 30px;
 }
 
+.menu li {
+  text-transform: uppercase;
+}
+
 .site-nav {
   list-style: none;
   color: #000000;
@@ -51,6 +55,10 @@ a {
 
 .services-item p{
   width: 300px;
+}
+
+.services-item h3 {
+  text-transform: uppercase;
 }
 
 .services-item a{
@@ -100,3 +108,7 @@ border-radius: 50%;
 .footer-main li:nth-child(1) img{padding-left: 25px;}
 .footer-main li:nth-child(2) img{padding-left: 33px;}
 .footer-main li:nth-child(3) img{padding-left: 30px;}
+
+.price {
+  border:none;
+}
