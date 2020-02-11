@@ -24,7 +24,8 @@
     <main>
       <h2>Магазин готовых шаблонов<h2>
 
-      <form  action="#" method="post" oninput="price-item.value=price.value">
+      <div class="flex-price">
+      <form  class="prices" action="#" method="post" oninput="price-item.value=price.value">
         <fieldset class="price">
           <label for="price">Стоимость</label>
           <input type="range" min="0" max="15000" step="100" id="price" name="price">
@@ -76,7 +77,8 @@
           <li><a href="#"><img src="img/img-kvast.jpg" width="360" height="576" alt="магазин кваса">арт. 006</a></li>
         </ul>
       </section>
-
+    </div>
+    
       <section class="contacts">
         <h2>Контакты</h2>
         <p>NERDS DESIGN STUDIO</p>
