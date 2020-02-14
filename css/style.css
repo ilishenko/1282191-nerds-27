@@ -121,7 +121,7 @@ a {
   top: 50px;
   left: 50px;
   background-color: white;
-  z-index:1;
+  z-index:2;
 }
 
 .contacts .map-marker {
@@ -144,9 +144,9 @@ a {
   padding-top: 30px;
 }
 
-.footer-main li:nth-child(1) img {padding-left: 25px;}
-.footer-main li:nth-child(2) img {padding-left: 33px;}
-.footer-main li:nth-child(3) img {padding-left: 30px;}
+.footer-main img:nth-child(1) {padding-left: 25px;}
+.footer-main img:nth-child(2) {padding-left: 33px;}
+.footer-main img:nth-child(3) {padding-left: 30px;}
 
 .price {
   border:none;
