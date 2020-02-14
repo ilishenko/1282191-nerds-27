@@ -104,9 +104,9 @@ a {
   position: relative;
   width: 1440px;
   height: 416px;
-  /*background-color: lightgray;
-  background-image: url("../img/map.png");*/
+  background-image: url("../img/map.png");
   margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .contacts .map {
@@ -115,24 +115,37 @@ a {
 
 .contacts-item {
   display: block;
-  position: absolute;
-  width: 400px;
-  width: 300px;
-  top: 50px;
-  left: 50px;
-  background-color: white;
-  z-index:2;
+  margin-left: 50px;
+  width: 100px;
+  min-height: 50px;
+  border:2px solid black;
 }
 
 .contacts .map-marker {
   position: absolute;
   top: 87px;
   left: 822px;
+
+}
+
+.footer-main {
+  display: flex;
+  align-items: center;
+
+
+}
+
+.footer-main ul {
+  display: flex;
+  justify-content: space-between;
+  min-width: 100px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .footer-main li{
   background-color: #e1e1e1;
-  display: inline-block;
   width:79px;
   height:79px;
   border-radius: 50%;
@@ -145,7 +158,7 @@ a {
 }
 
 .footer-main img:nth-child(1) {padding-left: 25px;}
-.footer-main img:nth-child(2) {padding-left: 33px;}
+.footer-main img:nth-child(2) {padding-left: 40px;}
 .footer-main img:nth-child(3) {padding-left: 30px;}
 
 .price {
