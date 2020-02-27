@@ -8,17 +8,19 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header>
-      <a class="logo" href="#"><img src="img/logo.png" alt="Логотип" width="160" height="65"></a>
-      <nav class="menu">
-        <ul>
-          <li><a href="#">Студия</a></li>
-          <li><a href="#">Клиенты</a></li>
-          <li><a>Магазин</a></li>
-          <li><a href="#">Контакты</a></li>
-          <li><a class="box" href="#"><img src="img/cart-icon.svg" width="15" height="15" alt="Иконка корзины">корзина</a></li>
-        </ul>
-      </nav>
+    <header class="header-top">
+      <div class="header-top-container">
+        <a class="logo"><img src="img/logo.png" alt="Логотип Нёрдс студии" width="160" height="65"></a>
+        <nav class="menu">
+          <ul class="site-nav">
+            <li><a href="#">Студия</a></li>
+            <li><a href="#">Клиенты</a></li>
+            <li><a href="catalog.html">Магазин</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li><a class="box" href="#"><img src="img/cart-icon.svg" width="15" height="15" alt="Иконка корзины">Корзина</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main>
@@ -79,16 +81,26 @@
       </section>
     </div>
 
-      <section class="contacts">
-        <h2>Контакты</h2>
+    </main>
+
+    <section class="contacts">
+
+      <div class="yandex-map">
+      
+      <!-- !<div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт-Петербург</a><a href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?l=trf%2Ctrfe&ll=30.319210%2C59.938928&utm_medium=mapframe&utm_source=maps&z=15.8" style="color:#eee;font-size:12px;position:absolute;top:14px;">Пробки в Москве — Яндекс.Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CKaSQX38" width="1440" height="416" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+
+-->
+      </div>
+      <div class="contacts-item">
+        <h2 class="visually-hidden">Контакты</h2>
         <p>NERDS DESIGN STUDIO</p>
         <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19.8</p>
         <a href="tel:+78122757575">тел. +7(812) 275-75-75</a>
         <a href="#">Напишите нам</a>
-        <!--<img src="img/map.png" width="1440" height="416">--><img src="img/map-marker.png" width="231" height="190" alt="Дизайн студия находится по адресу: город Санкт-Петербург, ул. Б. Конюшенная, д. 19.8">
-      </section>
+      </div>
+      <img class="map-marker" src="img/map-marker.png" width="231" height="190" alt="Дизайн студия находится по адресу: город Санкт-Петербург, ул. Б. Конюшенная, д. 19.8 ">
+    </section>
 
-    </main>
 
     <footer class="footer-main">
 
