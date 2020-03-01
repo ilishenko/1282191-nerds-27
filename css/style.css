@@ -10,6 +10,8 @@ a {
   text-decoration: none;
 }
 
+/* главная страница */
+
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -36,18 +38,31 @@ a {
   text-transform: uppercase;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+
+.menu-item-1 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .menu .logo {
+  margin-left: 20px;
+  margin-right: 200px;
+}
 
+.site-nav li {
+  margin-right: 46px;
 }
 
 .menu a {
   margin-top: 30px;
   color: black;
 }
-.menu ul {
-
+.menu-item-1-container {
+  max-width: 640px;
 }
 
 .menu li {
@@ -68,7 +83,8 @@ a {
 
 }
 
-.site-nav {
+.site-nav,
+.basket {
   list-style: none;
   color: #000000;
   display: flex;
@@ -105,6 +121,7 @@ a {
   font-size: 16px;
   line-height: 24px;
   font-weight: normal;
+  margin-bottom: 40px;
 }
 
 .privilege a {
@@ -142,12 +159,18 @@ a {
   margin-right: 100px;
 }
 
+.services-item img {
+  margin-bottom: 30px;
+}
+
 .services-item p {
   width: 300px;
+  margin-bottom: 40px;
 }
 
 .services-item h3 {
   text-transform: uppercase;
+  margin-bottom: 25px;
 }
 
 .services-item a {
@@ -261,6 +284,33 @@ a {
   top: 70px;
 }
 
+.privilege-item p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+.privilege-item dl {
+  display: flex;
+}
+
+.privilege-item dt {
+  font-size: 45px;
+  line-height: 10.06px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 35px;
+}
+
+.privilege-item dd {
+  margin: 0px;
+  color: #283136;
+  font-size: 16px;
+  line-height: 18px;
+}
+
 .works {
   margin-bottom: 80px;
   padding-bottom: 35px;
@@ -300,9 +350,16 @@ a {
   padding: 60px 50px;
   top: 53px;
   left: 140px;
-  width: 320px;
-  height: 310px;
+  width: 220px;
+  height: 190px;
   background-color: white;
+}
+
+.contacts-item .bold {
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
 }
 
 .contacts .map-marker {
@@ -372,6 +429,21 @@ a {
 .form-input {
   display: none;
 }
+/* стили магазина */
+
+.title-shop {
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  padding-top: 35px;
+  padding-bottom: 100px;
+  margin-bottom: 57px;
+}
+
+.title-shop h2 {
+  font-size: 55px;
+}
 
 .price {
   border:none;
@@ -386,6 +458,7 @@ a {
 }
 
 .prices {
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: flex-start;

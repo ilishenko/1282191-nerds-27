@@ -10,16 +10,37 @@
   <body>
     <header class="header-top">
       <div class="header-top-container">
-        <a class="logo"><img src="img/logo.png" alt="Логотип Нёрдс студии" width="160" height="65"></a>
-        <nav class="menu">
-          <ul class="site-nav">
-            <li><a href="#">Студия</a></li>
-            <li><a href="#">Клиенты</a></li>
-            <li><a href="catalog.html">Магазин</a></li>
-            <li><a href="#">Контакты</a></li>
-            <li><a class="box" href="#"><img src="img/cart-icon.svg" width="15" height="15" alt="Иконка корзины">Корзина</a></li>
-          </ul>
-        </nav>
+        <div class="header-top-container-1">
+          <nav class="menu">
+            <div class="menu-item-1">
+              <a class="logo"><img src="img/logo.png" alt="Логотип Нёрдс студии" width="160" height="65"></a>
+              <div class="menu-item-1-container">
+                <ul class="site-nav">
+                  <li><a href="#">Студия</a></li>
+                  <li><a href="#">Клиенты</a></li>
+                  <li><a href="catalog.html">Магазин</a></li>
+                  <li><a href="#">Контакты</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="menu-item-2">
+              <ul class="basket">
+                <li><a class="box" href="#"><img src="img/cart-icon.svg" width="15" height="15" alt="Иконка корзины">Корзина</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="header-top-container-2">
+          <section class="privilege">
+            <div class="privilege-items">
+              <h2>Долго, дорого, скурпулезно</h2>
+              <p>Математически выверенный дизайн
+              для вашего сайта или мобильного приложения</p>
+              <a href="#">Узнать больше</a>
+            </div>
+            <img src="img/slide1.png" alt="" width="698" height="413">
+          </section>
+        </div>
       </div>
     </header>
 
@@ -27,44 +48,31 @@
 
       <h1 class="visually-hidden">Дизайн студия «Nerds»</h1>
 
-      <section class="privilege">
-        <div class="privilege-items">
-          <h2>Долго, дорого, скурпулезно</h2>
-          <p>Математически выверенный дизайн
-            для вашего сайта или мобильного приложения</p>
-            <a href="#">Узнать больше</a>
-        </div>
-        <img src="img/slide1.png" alt="" width="698" height="413">
-      </section>
-
       <section class="services">
-
           <div class="services-item">
-            <h3>Веб-сайты</h3>
             <img src="img/illustration-1.png" width="300" height="146" alt="Иконка веб-сайта">
+            <h3>Веб-сайты</h3>
             <p>Мир никогда не будет прежним
             после того как увидит ваш сайт!</p>
             <a href="#">Заказать</a>
           </div>
           <div class="services-item">
-            <h3>Приложения</h3>
             <img src="img/illustration-2.png" width="300" height="146" alt="Иконка мобильных приложений">
+            <h3>Приложения</h3>
             <p>Покорите топ-10 приложений в
               appstore и google play</p>
             <a href="#">Заказать</a>
           </div>
           <div class="services-item">
-            <h3>Презентации</h3>
             <img src="img/illustration-3.png" width="300" height="146" alt="Иконка презентаций">
+            <h3>Презентации</h3>
             <p>Вы даже не подозреваете,
             насколько вы изумительны!</p>
             <a href="#">Заказать</a>
           </div>
-
       </section>
 
       <section class="info-privilege">
-
         <h2 class="visually-hidden">Преимущества</h2>
         <div class="info">
           <p class="info-item-1">Мы - маленькая, но гордая
@@ -84,12 +92,18 @@
           <img src="img/nerds-illustration.png" width="360" height="208" alt="Изображение логотипа дизайн студии и её преимуществ">
           <p>С 2004 года любим точность во всем:</p>
           <dl>
-            <dt>146<sup>%</sup></dt>
-            <dd>Уровень самоотдачи</dd>
-            <dt>100<sup>%</sup></dt>
-            <dd>Соблюдение сроков</dd>
-            <dt>50<sup>%</sup></dt>
-            <dd>Минимальная предоплата</dd>
+            <div>
+              <dt>146<sup>%</sup></dt>
+              <dd>Уровень самоотдачи</dd>
+            </div>
+            <div>
+              <dt>100<sup>%</sup></dt>
+              <dd>Соблюдение сроков</dd>
+            </div>
+            <div>
+              <dt>50<sup>%</sup></dt>
+              <dd>Минимальная предоплата</dd>
+            </div>
           </dl>
         </div>
       </section>
@@ -107,16 +121,15 @@
     </main>
 
     <section class="contacts">
-
       <div class="yandex-map">
 
       <!-- !<div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт-Петербург</a><a href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?l=trf%2Ctrfe&ll=30.319210%2C59.938928&utm_medium=mapframe&utm_source=maps&z=15.8" style="color:#eee;font-size:12px;position:absolute;top:14px;">Пробки в Москве — Яндекс.Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CKaSQX38" width="1440" height="416" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
-
 -->
+
       </div>
       <div class="contacts-item">
         <h2 class="visually-hidden">Контакты</h2>
-        <p>NERDS DESIGN STUDIO</p>
+        <p class="bold">Nerds design studio</p>
         <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19.8</p>
         <a href="tel:+78122757575">тел. +7(812) 275-75-75</a>
         <a href="#">Напишите нам</a>
@@ -126,7 +139,6 @@
 
 
     <footer class="footer-main">
-
       <ul>
         <li><a href="#"><img src="img/vk-icon.png" width="26" height="15" alt="ВК"></a></li>
         <li><a href="#"><img src="img/fb-icon.png" width="12" height="22" alt="Фейсбук"></a></li>
