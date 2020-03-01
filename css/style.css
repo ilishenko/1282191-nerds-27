@@ -92,6 +92,22 @@ a {
   flex-wrap: wrap;
 }
 
+.basket li {
+  padding-left: 30px;
+  position: relative;
+}
+
+ .basket .box::before {
+  content:"";
+  width: 15px;
+  height: 15px;
+  background: url('img/cart-icon.svg') no-repeat 50% 50%;
+  position: absolute;
+  left: -20px;
+  top: 2px;
+  border: 1px solid;
+}
+
 .content {
   width: 1160px;
   margin: 0 auto;
@@ -349,10 +365,28 @@ a {
   position: absolute;
   padding: 60px 50px;
   top: 53px;
-  left: 140px;
+  left: 90px;
   width: 220px;
   height: 190px;
   background-color: white;
+}
+
+.contacts-item .message {
+  display: block;
+  text-transform: uppercase;
+  padding-top: 18px;
+  padding-left: 45px;
+  padding-right: 45px;
+  padding-bottom: 17px;
+  background-color: #fb565a;
+  color: #ffffff;
+  border-radius: 2px;
+}
+
+.contacts-item .tel {
+  display: block;
+  color: #000000;
+  margin-bottom: 35px;
 }
 
 .contacts-item .bold {
