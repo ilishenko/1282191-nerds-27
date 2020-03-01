@@ -39,46 +39,60 @@
 
     <main class="content">
       <div class="flex-price">
-      <form  class="prices" action="#" method="post" oninput="price-item.value=price.value">
-        <fieldset class="price">
-          <label for="price">Стоимость</label>
-          <input type="range" min="0" max="15000" step="100" id="price" name="price">
-          от 0
-          до
-          <output name="price-item"></output>
-        </fieldset>
+        <form  class="prices" action="#" method="post" oninput="price-item.value=price.value">
+          <fieldset class="filter-item">
+            <legend>Стоимость:</legend>
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar" style="margin-left: 20%; width: 30%">
+                  </div>
+                </div>
+                <div class="toggle toggle-min">
+                </div>
+                <div class="toggle toggle-max">
+                </div>
+              </div>
+              <div class="price-controls">
+                <label for="min-price" class="min-price">
+                 от <input id="min-price" name="min-price" type="number" value="0"></label>
+                <label for="max-price" class="max-price">
+                 до <input id="max-price" name="max-price" type="number" value="15000"></label>
+              </div>
+            </div>
+          </fieldset>
 
-        <fieldset class="price">
-          <legend>Сетка:</legend>
-          <label for="adaptive-item">Адаптивная</label>
-          <input type="radio" name="grid" id="adaptive-item" value="adaptive">
+          <fieldset class="price">
+            <legend>Сетка:</legend>
+            <label for="adaptive-item">Адаптивная</label>
+            <input type="radio" name="grid" id="adaptive-item" value="adaptive">
 
-          <label for="fixed-item">Фиксированная</label>
-          <input type="radio" name="grid" id="fixed-item" value="fixed">
+            <label for="fixed-item">Фиксированная</label>
+            <input type="radio" name="grid" id="fixed-item" value="fixed">
 
-          <label for="rubber-item">Резиновая</label>
-          <input type="radio" name="grid" id="rubber-item" value="rubber">
-        </fieldset>
+            <label for="rubber-item">Резиновая</label>
+            <input type="radio" name="grid" id="rubber-item" value="rubber">
+          </fieldset>
 
-        <fieldset class="price">
-          <legend>Особенности:</legend>
-          <input type="checkbox" name="slider" id="slider-field" checked>
-          <label for="slider-field">Слайдер</label>
+          <fieldset class="price">
+            <legend>Особенности:</legend>
+            <input type="checkbox" name="slider" id="slider-field" checked>
+            <label for="slider-field">Слайдер</label>
 
-          <input type="checkbox" name="advantage" id="advantage-field">
-          <label for="advantage-field">Блок преимуществ</label>
+            <input type="checkbox" name="advantage" id="advantage-field">
+            <label for="advantage-field">Блок преимуществ</label>
 
-          <input type="checkbox" name="news" id="news-field" checked>
-          <label for="news-field">Новости</label>
+            <input type="checkbox" name="news" id="news-field" checked>
+            <label for="news-field">Новости</label>
 
-          <input type="checkbox" name="gallery" id="gallery-field">
-          <label for="gallery-field">Галерея</label>
+            <input type="checkbox" name="gallery" id="gallery-field">
+            <label for="gallery-field">Галерея</label>
 
-          <input type="checkbox" name="basket" id="basket-field">
-          <label for="basket-field">Корзина</label>
-        </fieldset>
+            <input type="checkbox" name="basket" id="basket-field">
+            <label for="basket-field">Корзина</label>
+          </fieldset>
 
-        <input type="submit" value="показать">
+          <input type="submit" value="показать">
       </form>
 
       <section class="gallery-project">
