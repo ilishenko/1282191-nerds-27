@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
-    <link href="css/normalize.css/normalize.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -16,16 +16,16 @@
               <a class="logo"><img src="img/logo.png" alt="Логотип Нёрдс студии" width="160" height="65"></a>
               <div class="menu-item-1-container">
                 <ul class="site-nav">
-                  <li><a href="#">Студия</a></li>
-                  <li><a href="#">Клиенты</a></li>
-                  <li><a href="catalog.html">Магазин</a></li>
-                  <li><a href="#">Контакты</a></li>
+                  <li class="active"><a href="#">Студия</a></li>
+                  <li class="active"><a href="#">Клиенты</a></li>
+                  <li class="active"><a href="catalog.html">Магазин</a></li>
+                  <li class="active"><a href="#">Контакты</a></li>
                 </ul>
               </div>
             </div>
             <div class="menu-item-2">
               <ul class="basket">
-                <li><a class="box" href="#"><img src="img/cart-icon.svg" width="15" height="15" alt="Иконка корзины">Корзина</a></li>
+                <li class="active"><a class="box" href="#"><img src="img/cart-icon.svg" width="15" height="15" alt="Иконка корзины">Корзина</a></li>
               </ul>
             </div>
           </nav>
@@ -38,7 +38,23 @@
               для вашего сайта или мобильного приложения</p>
               <a href="#">Узнать больше</a>
             </div>
-            <img src="img/slide1.png" alt="" width="698" height="413">
+            <div class="slider">
+              <input type="radio" id="btn-1" name="toggle" checked>
+              <input type="radio" id="btn-2" name="toggle">
+              <input type="radio" id="btn-3" name="toggle">
+              <div class="slider-controls">
+                <label for="btn-1"></label>
+                <label for="btn-2"></label>
+                <label for="btn-3"></label>
+              </div>
+              <div class="slider-inner">
+                <div class="slider-slides">
+                  <img src="img/slide1.png" alt="фотография с телефонами" width="698px" height="413px">
+                  <img src="img/slide2.jpg" alt="фотография с двумя мониторами" width="663px" height="430px">
+                  <img src="img/slide3.jpg" alt="фотография с монитором и телефоном" width="759px" height="411px">
+                </div>
+              </div>
+            </div>
           </section>
         </div>
       </div>
@@ -111,10 +127,10 @@
       <section class="works">
         <h2 class="visually-hidden">Выполненные проекты</h2>
         <ul>
-          <li><a href="#"><img src="img/logo-1.png" alt="HTMLAcademy" width="199" height="68"></a></li>
-          <li><a href="#"><img src="img/logo-2.png" alt="borodinski" width="209" height="90"></a></li>
-          <li><a href="#"><img src="img/logo-3.png" alt="pink" width="185" height="52"></a></li>
-          <li><a href="#"><img src="img/logo-4.png" alt="mishka" width="173" height="84"></a></li>
+          <li class="active-works"><a href="#"><img src="img/logo-1.png" alt="HTMLAcademy" width="199" height="68"></a></li>
+          <li class="active-works"><a href="#"><img src="img/logo-2.png" alt="borodinski" width="209" height="90"></a></li>
+          <li class="active-works"><a href="#"><img src="img/logo-3.png" alt="pink" width="185" height="52"></a></li>
+          <li class="active-works"><a href="#"><img src="img/logo-4.png" alt="mishka" width="173" height="84"></a></li>
         </ul>
       </section>
 
