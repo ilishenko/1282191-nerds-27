@@ -2,7 +2,7 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
-  font-feature-settings: "Roboto", Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 14px;
   background-color: white;
 }
@@ -116,7 +116,7 @@ a {
 
 .privilege h2 {
   line-height: 55px;
-  font-weight: medium;
+  font-weight: 600;
   font-size: 55px;
 }
 
@@ -551,6 +551,7 @@ a {
   margin: 0;
   padding: 0;
   border: none;
+  margin-bottom: 60px;
 }
 
 .range-filter {
@@ -639,6 +640,129 @@ a {
 
 .price {
   border:none;
+  margin: 0;
+}
+
+.price legend {
+  margin-left: -11px;
+  margin-bottom: 25px;
+}
+
+.price input[type="radio"] {
+  display: none;
+}
+
+.price input[type="checkbox"] {
+  display: none;
+}
+.price label {
+  padding-left: 35px;
+  position: relative;
+  color: #283136;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+
+.price .radio::before {
+  content:"";
+  position: absolute;
+  left: 0px;
+  width: 9px;
+  height: 9px;
+  border: 4px solid #ffffff;
+  box-shadow: 0 0 0 4px #283136;
+  border-radius: 50%;
+  opacity: 0.4;
+}
+
+
+#adaptive-item:checked ~ .price .radio[for="adaptive-item"]::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  width: 9px;
+  height: 9px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+#fixed-item:checked ~ .price label[for="fixed-item"] {
+  background-color: black;
+}
+
+#rubber-item:checked ~ .price label[for="rubber-item"] {
+  background-color: black;
+}
+
+.checkbox::before {
+  content: "";
+  position: absolute;
+  left: -2px;
+  width: 19px;
+  height: 19px;
+  border: 2px solid #283136;
+  opacity: 0.4;
+}
+
+#slider-field:checked ~ .checkbox[for="slider-field"]::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  width: 17px;
+  height: 6px;
+  border: 3px solid #283136;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  transform: rotate(-45deg);
+}
+
+#advantage-field:checked ~ .checkbox[for="advantage-field"]::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  width: 17px;
+  height: 6px;
+  border: 3px solid #283136;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  transform: rotate(-45deg);
+}
+
+#news-field:checked ~ .checkbox[for="news-field"]::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  width: 17px;
+  height: 6px;
+  border: 3px solid #283136;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  transform: rotate(-45deg);
+}
+
+#gallery-field:checked ~ .checkbox[for="gallery-field"]::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  width: 17px;
+  height: 6px;
+  border: 3px solid #283136;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  transform: rotate(-45deg);
+}
+
+#basket-field:checked ~ .checkbox[for="basket-field"]::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  width: 17px;
+  height: 6px;
+  border: 3px solid #283136;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  transform: rotate(-45deg);
 }
 
 .price legend {
