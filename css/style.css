@@ -664,7 +664,7 @@ a {
   margin-bottom: 20px;
 }
 
-.price .radio::before {
+.price .btn::before {
   content:"";
   position: absolute;
   left: 0px;
@@ -673,26 +673,52 @@ a {
   border: 4px solid #ffffff;
   box-shadow: 0 0 0 4px #283136;
   border-radius: 50%;
+  background-color: #ffffff;
+  cursor: pointer;
   opacity: 0.4;
 }
 
 
-#adaptive-item:checked ~ .price .radio[for="adaptive-item"]::after {
-  content: "";
+.btn-1:checked ~ .btn[for="adaptive-item"]::before {
+  content:"";
   position: absolute;
   left: 0px;
   width: 9px;
   height: 9px;
-  background-color: black;
+  border: 4px solid #ffffff;
+  box-shadow: 0 0 0 4px #283136;
   border-radius: 50%;
+  background-color: #000000;
+  cursor: pointer;
+  opacity: 1;
 }
 
-#fixed-item:checked ~ .price label[for="fixed-item"] {
-  background-color: black;
+.btn-2:checked ~ .btn[for="fixed-item"]::before {
+  content:"";
+  position: absolute;
+  left: 0px;
+  width: 9px;
+  height: 9px;
+  border: 4px solid #ffffff;
+  box-shadow: 0 0 0 4px #283136;
+  border-radius: 50%;
+  background-color: #000000;
+  cursor: pointer;
+  opacity: 1;
 }
 
-#rubber-item:checked ~ .price label[for="rubber-item"] {
-  background-color: black;
+.btn-3:checked ~ .btn[for="rubber-item"]::before {
+  content:"";
+  position: absolute;
+  left: 0px;
+  width: 9px;
+  height: 9px;
+  border: 4px solid #ffffff;
+  box-shadow: 0 0 0 4px #283136;
+  border-radius: 50%;
+  background-color: #000000;
+  cursor: pointer;
+  opacity: 1;
 }
 
 .checkbox::before {
@@ -703,9 +729,10 @@ a {
   height: 19px;
   border: 2px solid #283136;
   opacity: 0.4;
+  cursor: pointer;
 }
 
-#slider-field:checked ~ .checkbox[for="slider-field"]::after {
+.btn-4:checked ~ .checkbox[for="slider-field"]::after {
   content: "";
   position: absolute;
   left: 5px;
@@ -715,9 +742,14 @@ a {
   border-top-color: transparent;
   border-right-color: transparent;
   transform: rotate(-45deg);
+  cursor: pointer;
 }
 
-#advantage-field:checked ~ .checkbox[for="advantage-field"]::after {
+.btn-4:checked ~ .checkbox[for="slider-field"]::before {
+opacity: 1;
+}
+
+.btn-5:checked ~ .checkbox[for="advantage-field"]::after {
   content: "";
   position: absolute;
   left: 5px;
@@ -727,9 +759,14 @@ a {
   border-top-color: transparent;
   border-right-color: transparent;
   transform: rotate(-45deg);
+  cursor: pointer;
 }
 
-#news-field:checked ~ .checkbox[for="news-field"]::after {
+.btn-5:checked ~ .checkbox[for="advantage-field"]::before {
+  opacity: 1;
+}
+
+.btn-6:checked ~ .checkbox[for="news-field"]::after {
   content: "";
   position: absolute;
   left: 5px;
@@ -739,9 +776,14 @@ a {
   border-top-color: transparent;
   border-right-color: transparent;
   transform: rotate(-45deg);
+  cursor: pointer;
 }
 
-#gallery-field:checked ~ .checkbox[for="gallery-field"]::after {
+.btn-6:checked ~ .checkbox[for="news-field"]::before {
+  opacity: 1;
+}
+
+.btn-7:checked ~ .checkbox[for="gallery-field"]::after {
   content: "";
   position: absolute;
   left: 5px;
@@ -751,9 +793,14 @@ a {
   border-top-color: transparent;
   border-right-color: transparent;
   transform: rotate(-45deg);
+  cursor: pointer;
 }
 
-#basket-field:checked ~ .checkbox[for="basket-field"]::after {
+.btn-7:checked ~ .checkbox[for="gallery-field"]::before {
+  opacity: 1;
+}
+
+.btn-8:checked ~ .checkbox[for="basket-field"]::after {
   content: "";
   position: absolute;
   left: 5px;
@@ -763,6 +810,33 @@ a {
   border-top-color: transparent;
   border-right-color: transparent;
   transform: rotate(-45deg);
+  cursor: pointer;
+}
+
+.btn-8:checked ~ .checkbox[for="basket-field"]::before {
+  opacity: 1;
+}
+
+.submit-1 {
+  text-transform: uppercase;
+  line-height: 18px;
+  font-weight: 600;
+  border: none;
+  padding: 20px 90px;
+  background-color: #eeeeee;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.submit-1:hover {
+  background-color: #dfdfdf;
+}
+
+.submit-1:active {
+  outline: none;
+  background-color: #d5d5d5;
+  opacity: 0.3;
+  box-shadow: 0 -3px 0 0 #bfbfbf;
 }
 
 .price legend {
@@ -872,4 +946,59 @@ a {
 
 .active-catalog:active {
   background-color: #d7373b;
+}
+
+.paginator {
+  text-align: left;
+  padding-left: 40px;
+}
+
+.paginator a {
+  display: inline-block;
+  text-decoration: none;
+  margin-right: 10px;
+  line-height: 50px;
+  padding: 0px 20px;
+  height: 50px;
+  background-color: #eeeeee;
+  color: #000000;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 3px;
+}
+
+.paginator a:hover {
+  background-color: #dfdfdf;
+}
+
+.paginator a:active {
+  background-color: #d5d5d5;
+  opacity: 0.3;
+  box-shadow: 0 -3px 0 0 #bfbfbf;
+  height: 47px;
+  line-height: 47px;
+}
+
+.paginator .prev,
+.paginator .next {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.paginator .prev {
+
+}
+
+.paginator .current {
+  background-color: #ffffff;
+  line-height: 44px;
+  height: 44px;
+  padding: 0px 17px;
+  border: 3px solid #dbdbdb;
+}
+
+.paginator .disabled {
+  display: none;
 }

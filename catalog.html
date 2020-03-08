@@ -65,40 +65,44 @@
 
           <fieldset class="price">
             <legend>Сетка:</legend>
-            <label class="radio" for="adaptive-item">Адаптивная</label>
-            <input type="radio" name="grid" id="adaptive-item" value="adaptive">
+            <label class="btn btn-out-1" for="adaptive-item">Адаптивная</label>
+            <input class="btn-1" type="radio" name="grid" id="adaptive-item" value="adaptive">
 
-            <label class="radio" for="fixed-item">Фиксированная</label>
-            <input type="radio" name="grid" id="fixed-item" value="fixed">
+            <label class="btn btn-out-2" for="fixed-item">Фиксированная</label>
+            <input class="btn-2" type="radio" name="grid" id="fixed-item" value="fixed">
 
-            <label class="radio" for="rubber-item">Резиновая</label>
-            <input type="radio" name="grid" id="rubber-item" value="rubber">
+            <label class="btn btn-out-3" for="rubber-item">Резиновая</label>
+            <input class="btn-3" type="radio" name="grid" id="rubber-item" value="rubber">
           </fieldset>
 
           <fieldset class="price">
             <legend>Особенности:</legend>
-            <input type="checkbox" name="slider" id="slider-field" checked>
-            <label class="checkbox" for="slider-field">Слайдер</label>
+            <input class="btn-4" type="checkbox" name="slider" id="slider-field" checked>
+            <label class="checkbox btn-out-4" for="slider-field">Слайдер</label>
 
-            <input type="checkbox" name="advantage" id="advantage-field">
-            <label class="checkbox" for="advantage-field">Блок преимуществ</label>
+            <input class="btn-5" type="checkbox" name="advantage" id="advantage-field">
+            <label class="checkbox btn-out-5" for="advantage-field">Блок преимуществ</label>
 
-            <input type="checkbox" name="news" id="news-field" checked>
-            <label class="checkbox" for="news-field">Новости</label>
+            <input class="btn-6" type="checkbox" name="news" id="news-field" checked>
+            <label class="checkbox btn-out-6" for="news-field">Новости</label>
 
-            <input type="checkbox" name="gallery" id="gallery-field">
-            <label class="checkbox" for="gallery-field">Галерея</label>
+            <input class="btn-7" type="checkbox" name="gallery" id="gallery-field">
+            <label class="checkbox btn-out-7" for="gallery-field">Галерея</label>
 
-            <input type="checkbox" name="basket" id="basket-field">
-            <label class="checkbox" for="basket-field">Корзина</label>
+            <input class="btn-8" type="checkbox" name="basket" id="basket-field">
+            <label class="checkbox btn-out-8" for="basket-field">Корзина</label>
           </fieldset>
 
-          <input type="submit" value="показать">
+          <input class="submit-1" type="submit" value="показать">
       </form>
       </div>
 
       <section class="gallery-project">
         <h2 class="visually-hidden">Галерея шаблонов</h2>
+
+        <div class="sort">
+        </div>
+
         <ul>
           <li class="gallery-project-item">
             <img src="img/img-sedona.jpg" width="360" height="576" alt="SEDONA">
@@ -155,6 +159,15 @@
             </div>
           </li>
         </ul>
+
+        <div class="paginator">
+          <a class="disabled prev" href="#prev">Предыдущая</a>
+          <a class="current" href="#1">1</a>
+          <a href="#2">2</a>
+          <a href="#3">3</a>
+          <a class="next" href="#next">Следующая</a>
+        </div>
+
       </section>
     </div>
 
