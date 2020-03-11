@@ -202,22 +202,25 @@ a {
   margin-right: 15px;
   vertical-align: top;
   font-size: 0;
-  background-color: #ffffff;
+  width: 4px;
+  height: 4px;
+  border: 2px solid #ffffff;
   border-radius: 50%;
-  cursor: pointer;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 3px #ffffff;
 }
 
-.btn-10:checked ~ .slider-controls .slider-out[for="slide-1"] {
-  background-color: #000000;
+.btn-10:checked + .slider-out[for="slide-1"] {
+  border: 2px solid #c1c1c1;
   background-image: url("../img/slide1.png");
 }
 
-.btn-11:checked ~ .slider-controls .slider-out[for="slide-2"] {
-  background-color: #000000;
+.btn-11:checked + .slider-out[for="slide-2"] {
+  border: 2px solid #c1c1c1;
 }
 
-.btn-12:checked ~ .slider-controls .slider-out[for="slide-3"] {
-  background-color: #000000;
+.btn-12:checked + .slider-out[for="slide-3"] {
+  border: 2px solid #c1c1c1;
 }
 /*
 .slider input[type="radio"] {
