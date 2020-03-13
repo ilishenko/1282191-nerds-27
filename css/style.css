@@ -52,7 +52,7 @@ a {
 }
 
 .menu .logo {
-  margin-left: 20px;
+  margin-left: 0px;
   margin-right: 200px;
 }
 
@@ -118,7 +118,7 @@ a {
 
 .header-top-container-2 {
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 0px;
   height: 432px;
   background-color: inherit;
   background-image: url("../img/slide1.png");
@@ -203,33 +203,33 @@ a {
   cursor: pointer;
 }
 
-#product-1:checked ~ .header-top #slide1 {
+#product-first:checked ~ .header-top #slide1 {
   display: block;
 }
 
-#product-2:checked ~ .header-top #slide2 {
+#product-second:checked ~ .header-top #slide2 {
   display: block;
 }
 
-#product-3:checked ~ .header-top #slide3 {
+#product-third:checked ~ .header-top #slide3 {
   display: block;
 }
 
-#product-1:checked ~ .header-top label[for="product-first"],
-#product-2:checked ~ .header-top label[for="product-second"],
-#product-3:checked ~ .header-top label[for="product-third"] {
+#product-first:checked ~ .header-top label[for="product-first"],
+#product-second:checked ~ .header-top label[for="product-second"],
+#product-third:checked ~ .header-top label[for="product-third"] {
   border: 2px solid #c1c1c1;
 }
 
-#product-1:checked ~ .header-top-container-2 {
+#product-first:checked ~ .header-top-container-2 {
   background-image: url("../img/slide1.png");
 }
 
-#product-2:checked ~ .header-top-container-2 {
+#product-second:checked ~ .header-top-container-2 {
   background-image: url("../img/slide2.jpg");
 }
 
-#product-3:checked ~ .header-top-container-2 {
+#product-third:checked ~ .header-top-container-2 {
   background-image: url("../img/slide3.jpg");
 }
 
