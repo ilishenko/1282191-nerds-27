@@ -214,6 +214,31 @@
         <p>скидка 10% для друзей из социальных сетей.</p>
       </div>
     </footer>
+
+    <section class="modal-login">
+      <h2 class="modal-title">Напишите нам</h2>
+      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="user-item-container">
+          <label for="user-name"><span class="modal-text">Ваше имя:</span></label>
+          <input class="user-item" type="text" id="user-name" name="user-name" placeholder="Имя Фамилия" >
+        </div>
+
+        <div class="user-item-container">
+          <label for="user-email"><span class="modal-text">Ваш e-mail:<span><label>
+          <input class="user-item" type="email" id="user-email" name="user-email" placeholder="email@example.com" >
+        </div>
+
+        <div class="user-write-us-container">
+          <span class="modal-text">Текст письма:<span>
+          <textarea class="user-write-us" id="user-write" name="user-write" rows="5" placeholder="В свободной форме" ></textarea>
+        </div>
+        <button class="button" type="submit">Отправить</button>
+      </form>
+      <button class="modal-close" type="button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+    </section>
+    
     <script src="js/popap.js">
     </script>
   </body>
