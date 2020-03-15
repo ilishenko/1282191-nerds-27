@@ -19,10 +19,10 @@
               <a class="logo"><img src="img/logo.png" alt="Логотип Нёрдс студии" width="160" height="65"></a>
               <div class="menu-item-1-container">
                 <ul class="site-nav">
-                  <li class="active"><a href="#">Студия</a></li>
-                  <li class="active"><a href="#">Клиенты</a></li>
+                  <li class="active"><a href="#studio">Студия</a></li>
+                  <li class="active"><a href="#client">Клиенты</a></li>
                   <li class="active"><a href="catalog.html">Магазин</a></li>
-                  <li class="active"><a href="#">Контакты</a></li>
+                  <li class="active"><a href="#contact">Контакты</a></li>
                 </ul>
               </div>
             </div>
@@ -43,7 +43,7 @@
             <ul class="slider-list">
               <li class="slider-item slide" id="slide1">
                 <h3 class="slide-title">Долго, дорого, скурпулезно</h3>
-                <p class="slide-paragraf">Математически выверенный дизайн
+                <p class="slide-paragraf">Математически выверенный дизайн<br>
                 для вашего сайта или мобильного приложения</p>
                 <a class="slide-button" href="#">Узнать больше</a>
               </li>
@@ -54,7 +54,7 @@
               </li>
               <li class="slider-item slide" id="slide3">
                 <h3 class="slide-title">Только ночь, только хардкор</h3>
-                <p class="slide-paragraf">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+                <p class="slide-paragraf">Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
                 <a class="slide-button" href="#">Узнать больше</a>
               </li>
             </ul>
@@ -91,19 +91,17 @@
           </div>
       </section>
 
-      <section class="info-privilege">
+      <section id="studio" class="info-privilege">
         <h2 class="visually-hidden">Преимущества</h2>
         <div class="info">
-          <p class="info-item-1">Мы - маленькая, но гордая
-          дизайн-студия из Краснодара.</p>
-          <p class="info-item-2">Исповедуем принципы минимализма и простоты. ставим математический расчет
-          превыше креатива. работаем не покладая рук, как роботы.</p>
+          <p class="info-item-1">Мы - маленькая, но гордая дизайн-студия из Краснодара.</p>
+          <p class="info-item-2">Исповедуем принципы минимализма и простоты. ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
           <p class="info-item-3">Выполняем заказы на разработку:</p>
 
           <ul>
-            <li>Веб-сайтов любой сложности</li>
-            <li>Мобильных приложений для ios и android</li>
-            <li>Слайдшоу и видео для корпоративных презентаций</li>
+            <li><p class="info-item-4">Веб-сайтов любой сложности</p></li>
+            <li><p class="info-item-4">Мобильных приложений для ios и android</p></li>
+            <li><p class="info-item-4">Слайдшоу и видео для корпоративных презентаций</p></li>
           </ul>
         </div>
 
@@ -127,7 +125,7 @@
         </div>
       </section>
 
-      <section class="works">
+      <section id="client" class="works">
         <h2 class="visually-hidden">Выполненные проекты</h2>
         <ul>
           <li class="active-works"><a href="#"><img src="img/logo-1.png" alt="HTMLAcademy" width="199" height="68"></a></li>
@@ -139,7 +137,7 @@
 
     </main>
 
-    <section class="contacts">
+    <section id="contact" class="contacts">
       <div class="yandex-map">
 
       <iframe class="google-maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123754!2d30.320894615769383!3d59.938796869048296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1583775264922!5m2!1sru!2sru" width="1440" height="416"  allowfullscreen=""></iframe>
@@ -148,8 +146,8 @@
       <div class="contacts-item">
         <h2 class="visually-hidden">Контакты</h2>
         <p class="bold">Nerds design studio</p>
-        <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19.8</p>
-        <a class="tel" href="tel:+78122757575">тел. +7(812) 275-75-75</a>
+        <p class="adress">191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19.8</p>
+        <p class="tel-item"><a class="tel" href="tel:+78122757575">тел. +7(812) 275-75-75</a></p>
         <a class="message" href="#">Напишите нам</a>
       </div>
       <img class="map-marker" src="img/map-marker.png" width="231" height="190" alt="Дизайн студия находится по адресу: город Санкт-Петербург, ул. Б. Конюшенная, д. 19.8 ">
@@ -178,12 +176,12 @@
         </div>
 
         <div class="user-item-container">
-          <label for="user-email"><span class="modal-text">Ваш e-mail:<span><label>
+          <label for="user-email"><span class="modal-text">Ваш e-mail:</span></label>
           <input class="user-item" type="email" id="user-email" name="user-email" placeholder="email@example.com" >
         </div>
 
         <div class="user-write-us-container">
-          <span class="modal-text">Текст письма:<span>
+          <span class="modal-text">Текст письма:</span>
           <textarea class="user-write-us" id="user-write" name="user-write" rows="5" placeholder="В свободной форме" ></textarea>
         </div>
         <button class="button" type="submit">Отправить</button>

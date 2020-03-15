@@ -17,15 +17,15 @@
               <div class="menu-item-1-container">
                 <ul class="site-nav">
                   <li class="active"><a href="#">Студия</a></li>
-                  <li class="active"><a href="#">Клиенты</a></li>
+                  <li class="active"><a href="index.html#client">Клиенты</a></li>
                   <li class="active now-catalog"><a>Магазин</a></li>
-                  <li class="active"><a href="#">Контакты</a></li>
+                  <li class="active"><a href="#contact">Контакты</a></li>
                 </ul>
               </div>
             </div>
             <div class="menu-item-2">
               <ul class="basket">
-                <li class="active"><a class="box" href="#"><img src="img/cart-icon.svg" width="15" height="15" alt="Иконка корзины">Корзина</a></li>
+                <li class="active"><a class="box" href="#"><img src="img/cart-icon.png" width="15" height="15" alt="Иконка корзины">Корзина</a></li>
               </ul>
             </div>
           </nav>
@@ -185,7 +185,7 @@
 
     </main>
 
-    <section class="contacts">
+    <section id="contact" class="contacts">
       <div class="yandex-map">
 
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123754!2d30.320894615769383!3d59.938796869048296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1583775264922!5m2!1sru!2sru" width="1440" height="416"  allowfullscreen=""></iframe>
@@ -194,8 +194,8 @@
       <div class="contacts-item">
         <h2 class="visually-hidden">Контакты</h2>
         <p class="bold">Nerds design studio</p>
-        <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19.8</p>
-        <a class="tel" href="tel:+78122757575">тел. +7(812) 275-75-75</a>
+        <p class="adress">191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19.8</p>
+        <p class="tel-item"><a class="tel" href="tel:+78122757575">тел. +7(812) 275-75-75</a></p>
         <a class="message" href="#">Напишите нам</a>
       </div>
       <img class="map-marker" src="img/map-marker.png" width="231" height="190" alt="Дизайн студия находится по адресу: город Санкт-Петербург, ул. Б. Конюшенная, д. 19.8 ">
@@ -224,12 +224,12 @@
         </div>
 
         <div class="user-item-container">
-          <label for="user-email"><span class="modal-text">Ваш e-mail:<span><label>
+          <label for="user-email"><span class="modal-text">Ваш e-mail:</span></label>
           <input class="user-item" type="email" id="user-email" name="user-email" placeholder="email@example.com" >
         </div>
 
         <div class="user-write-us-container">
-          <span class="modal-text">Текст письма:<span>
+          <span class="modal-text">Текст письма:</span>
           <textarea class="user-write-us" id="user-write" name="user-write" rows="5" placeholder="В свободной форме" ></textarea>
         </div>
         <button class="button" type="submit">Отправить</button>
@@ -238,7 +238,7 @@
         <span class="visually-hidden">Закрыть</span>
       </button>
     </section>
-    
+
     <script src="js/popap.js">
     </script>
   </body>
