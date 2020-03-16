@@ -23,7 +23,7 @@ a {
   width: 100%;
   margin: 0 auto;
   background-color: #eeeeee;
-  margin-bottom: 69px;
+  margin-bottom: 79px;
 }
 
 .header-top-container {
@@ -53,12 +53,18 @@ a {
   justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
+  padding-top: 10px;
 }
 
 .menu .logo {
-  padding-left: 65px;
+  padding-left: 45px;
   margin-left: 0px;
   margin-right: 160px;
+}
+
+.site-nav {
+  max-width: 645px;
+  padding-top: 10px;
 }
 
 .site-nav li {
@@ -66,19 +72,14 @@ a {
 }
 
 .menu a {
-  color: black;
+  font-family: Roboto;
+  font-weight: 600;
+  color: #000000;
 }
-.menu-item-1-container {
-  max-width: 645px;
-  padding-top: 17px;
-}
+
 
 .menu li {
   text-transform: uppercase;
-}
-
-.site-nav a {
-  color: #000000;
 }
 
 .active:link a{
@@ -103,12 +104,9 @@ a {
   flex-wrap: wrap;
 }
 
-.menu-item-2 {
-  padding-top: 33px;
-}
-
-.menu-item-2 .box {
-  padding-left: 45px;
+.basket {
+  margin-left: 199px;
+  padding-top: 10px;
 }
 
 .basket li {
@@ -117,20 +115,20 @@ a {
 
 .basket img {
   position: absolute;
-  left: 5px;
+  left: -40px;
 }
 
 .header-top-container-2 {
-  height: 414px;
-  margin: 0 auto;
-  padding: 0 0 0 62px;
   height: 432px;
+  margin: 0 auto;
+  margin-top: -6px;
 }
 
 .slider {
+  width: 1131px;
   height: 414px;
-  position: relative;
-  padding-top: 10px;
+  padding-left: 43px;
+  padding-top: 17px;
   text-align: left;
 }
 
@@ -176,19 +174,24 @@ a {
 }
 
 .slide-title {
+  font-family: Roboto;
   width: 520px;
-  margin-bottom: 25px;
+  margin-top: 60px;
+  margin-bottom: 26px;
   line-height: 55px;
   font-weight: 600;
   font-size: 55px;
 }
 
 .slide-paragraf {
+  font-family: Roboto;
   width: 420px;
   font-size: 16px;
   line-height: 24px;
   font-weight: normal;
-  margin-bottom: 60px;
+  color: #283136;
+  padding-left: 2px;
+  margin-bottom: 56px;
 }
 
 .slide-button {
@@ -218,8 +221,8 @@ a {
 
 .slider-controls {
   position: absolute;
-  top: 320px;
-  left: 560px;
+  top: 435px;
+  left: 681px;
   height: 18px;
   z-index: 100;
   font-size: 0;
@@ -229,11 +232,11 @@ a {
   display: inline-block;
   width: 4px;
   height: 4px;
-  margin-right: 17px;
+  margin-right: 27px;
   border: 2px solid #ffffff;
   border-radius: 50%;
   background-color: #ffffff;
-  box-shadow: 0 0 0 3px #ffffff;
+  box-shadow: 0 0 0 5px #ffffff;
   cursor: pointer;
 }
 
@@ -263,12 +266,12 @@ a {
 }
 
 .services {
-  margin-left: 63px;
-  margin-bottom: 25px;
-  padding-bottom: 100px;
+  margin-left: 44px;
+  margin-bottom: 29px;
+  padding-bottom: 95px;
   display: flex;
   justify-content: left;
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 2px solid #eeeeee;
 }
 
 .services-item {
@@ -345,10 +348,8 @@ a {
 
 .info-privilege {
   display: flex;
-  margin-left: 62px;
+  margin-left: 40px;
   padding-bottom: 50px;
-  margin-bottom: 60px;
-  border-bottom: 1px solid #eeeeee;
 }
 
 .info {
@@ -358,24 +359,30 @@ a {
 
 .info-item-1 {
   width: 660px;
+  font-family: Roboto;
   font-size: 45px;
   line-height: 45px;
+  font-weight: bold;
   margin-bottom: 33px;
   padding-left: 5px;
 }
 
 .info-item-2 {
+  font-family: Roboto;
   font-size: 16px;
   line-height: 24px;
+  color: #283136;
   padding-left: 5px;
   margin-bottom: 40px;
 }
 
 .info-item-3 {
+  font-family: Roboto;
   font-size: 16px;
   line-height: 24px;
   text-transform: uppercase;
   font-weight: bold;
+  padding-left: 5px;
   margin-bottom: 23px;
 }
 
@@ -383,7 +390,7 @@ a {
   position: relative;
   list-style: none;
   margin: 0px;
-  padding-left: 37px;
+  padding-left: 41px;
   margin-bottom: 15px;
 }
 
@@ -394,6 +401,7 @@ a {
 .info-item-4 {
   font-size: 16px;
   line-height: 24px;
+  color: #283136;
 }
 
 .info li::before {
@@ -402,16 +410,16 @@ a {
   width: 25px;
   height:2px;
   background-color: #fb565a;
-  top: 10px;
-  left: 3px;
+  top: 11px;
+  left: 6px;
 }
 
 .info li:nth-of-type(2)::before {
-  top: 60px;
+  top: 59px;
 }
 
 .info li:nth-of-type(3)::before {
-  top: 105px;
+  top: 107px;
 }
 
 .privilege-item p {
@@ -444,17 +452,71 @@ a {
 }
 
 .works {
-  margin-left: 62px;
+  width: 1160px;
+  margin-left: 42px;
   margin-bottom: 80px;
-  padding-bottom: 15px;
-  border-bottom: 1px solid #eeeeee;
+  border-top: 2px solid #eeeeee;
+  border-bottom: 2px solid #eeeeee;
 }
 
 .works ul{
   list-style: none;
   display: flex;
-  justify-content: space-between;
-  align-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.active-works {
+  height: 115px;
+  position: relative;
+}
+
+.active-works:nth-child(1) {
+  padding-left: 34px;
+  padding-top: 61px;
+  width: 220px;
+}
+
+.active-works:nth-child(2) {
+  margin-left: 52px;
+  padding-left: 23px;
+  padding-top: 45px;
+  width: 220px;
+}
+
+.active-works:nth-child(3) {
+  margin-left: 67px;
+  padding-left: 25px;
+  padding-top: 64px;
+  width: 200px;
+}
+
+.active-works:nth-child(4) {
+  padding-left: 20px;
+  margin-left: 86px;
+  padding-top: 51px;
+  width: 180px;
+}
+
+.active-works:not(:nth-child(4))::after {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 52px;
+  background-color: #eeeeee;
+}
+
+.active-works:nth-child(1)::after {
+  right: -30px;
+}
+
+.active-works:nth-child(2)::after {
+  top: 60px;
+  right: -35px;
+}
+
+.active-works:nth-child(3)::after {
+  right: -43px;
 }
 
 .works img {
@@ -561,7 +623,7 @@ a {
   display: flex;
   justify-content: left;
   width: 400px;
-  margin-left: 62px;
+  margin-left: 44px;
   padding: 0;
   list-style: none;
 }
@@ -800,7 +862,7 @@ a {
 
 .title-shop {
   font-family: Roboto;
-  padding-left: 280px;
+  padding-left: 260px;
   padding-right: 20px;
   padding-top: 20px;
   padding-bottom: 55px;
@@ -832,6 +894,7 @@ a {
 }
 
 .filter-item legend {
+  font-family: Roboto;
   font-size: 18px;
   line-height: 24px;
   text-transform: uppercase;
@@ -913,11 +976,16 @@ a {
 .price {
   border:none;
   margin: 0;
+  margin-bottom: 15px;
 }
 
 .price legend {
+  font-family: Roboto;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
   margin-left: -11px;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
 }
 
 .price input[type="radio"] {
@@ -928,7 +996,7 @@ a {
   display: none;
 }
 .price label {
-  padding-left: 35px;
+  padding-left: 27px;
   position: relative;
   color: #283136;
   font-size: 16px;
@@ -939,7 +1007,7 @@ a {
 .price .btn::before {
   content:"";
   position: absolute;
-  left: 0px;
+  left: -4px;
   width: 9px;
   height: 9px;
   border: 4px solid #ffffff;
@@ -1166,7 +1234,8 @@ opacity: 1;
   display: flex;
   justify-content: space-around;
   margin: 0 auto;
-  margin-left: 130px;
+  margin-left: 90px;
+  margin-top: -16px;
 }
 
 .price {
