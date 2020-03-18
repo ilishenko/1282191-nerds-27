@@ -40,7 +40,7 @@ a {
 }
 
 .menu {
-  width: 1222px;
+  width: 1160px;
   margin-top: 0px;
   font-size: 16px;
   color: #000000;
@@ -58,7 +58,8 @@ a {
   padding-top: 10px;
 }
 
-.menu .logo {
+ .logo img {
+  color: #000000;
   padding-left: 45px;
   margin-left: 0px;
   margin-right: 160px;
@@ -106,7 +107,7 @@ a {
 }
 
 .basket {
-  margin-left: 199px;
+  margin-left: 150px;
   padding-top: 10px;
 }
 
@@ -369,7 +370,7 @@ a {
   font-family: Roboto;
   font-size: 45px;
   line-height: 45px;
-  font-weight: bold;
+  font-weight: 500;
   margin-bottom: 33px;
   padding-left: 5px;
 }
@@ -623,6 +624,7 @@ a {
   padding-left: 20px;
   padding-right: 20px;
   margin: 0 auto;
+  margin-bottom: 70px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -889,10 +891,13 @@ a {
 }
 
 .title-shop h2 {
+  font-family: Roboto;
+  font-weight: 500px;
   font-size: 55px;
 }
 
 .flex-price-form {
+  width: 260px;
   margin-right: 100px;
 }
 
@@ -1210,9 +1215,10 @@ a {
 }
 
 .submit-1 {
+  font-size: Roboto;
   text-transform: uppercase;
   line-height: 18px;
-  font-weight: 600;
+  font-weight: 500;
   border: none;
   padding: 20px 90px;
   background-color: #eeeeee;
@@ -1251,11 +1257,16 @@ a {
   justify-content: space-around;
   margin: 0 auto;
   margin-left: 90px;
-  margin-top: -16px;
+  margin-top: 0px;
 }
 
 .price {
   display: flex;
+  width: 180px;
+}
+
+.gallery-project {
+  box-sizing: border-box;
 }
 
 .gallery-project ul {
@@ -1267,7 +1278,7 @@ a {
 }
 
 .gallery-project .sort {
-  margin-top: -10px;
+  margin-top: 0px;
   display: flex;
   width: 760px;
   text-transform: uppercase;
