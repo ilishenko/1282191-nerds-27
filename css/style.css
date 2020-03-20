@@ -52,26 +52,19 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-left: 45px;
+  margin-left: 23px;
   padding-top: 10px;
 }
 
  .logo img {
   color: #000000;
-
   margin-left: 0px;
-/*  margin-right: 160px;*/
 }
-
-/*.menu-item-3 {
-  width: 800px;
-  display: flex;
-  justify-content: space-between;
-}*/
 
 .site-nav {
   max-width: 645px;
   padding-top: 10px;
+  padding-left: 50px;
 }
 
 .site-nav li {
@@ -79,7 +72,7 @@ a {
 }
 
 .menu a {
-  font-family: Roboto;
+  font-family: "Roboto", Arial, sans-serif;
   font-weight: 600;
   color: #000000;
 }
@@ -111,8 +104,12 @@ a {
 }
 
 .basket {
-/*  margin-left: 150px; */
   padding-top: 10px;
+}
+
+.basket svg {
+  margin-right: 22px;
+  fill: #a6a6a6;
 }
 
 .basket li {
@@ -134,8 +131,9 @@ a {
 
 .header-top-container-2 {
   width: 100%;
-  height: 414px;
+  height: 426px;
   margin: 0 auto;
+  margin-bottom: 80px;
   background-color: #eeeeee;
 }
 
@@ -143,7 +141,7 @@ a {
   box-sizing: border-box;
   width: 1160px;
   margin: 0 auto;
-  height: 414px;
+  height: 426px;
   padding-left: 20px;
   padding-right: 20px;
   text-align: left;
@@ -161,64 +159,67 @@ a {
 }
 
 .slide:nth-child(1) {
-  height: 414px;
+  height: 426px;
   background-color: inherit;
   vertical-align: middle;
   background-image: url("../img/slide1.png");
   background-repeat: no-repeat;
-  background-position: center right;
+  background-position: 434px 13px;;
   border: 1px solid transparent;
 }
 
 .slide:nth-child(2) {
-  height: 414px;
+  height: 426px;
   background-color: #eeeeee;
   vertical-align: middle;
   background-image: url("../img/slide2.png");
   background-repeat: no-repeat;
-  background-position: center right;
+  background-position: 434px 13px;;
   border: 1px solid transparent;
 }
 
 .slide:nth-child(3) {
-  height: 414px;
+  height: 426px;
   background-color: #eeeeee;
   vertical-align: middle;
   background-image: url("../img/slide3.png");
   background-repeat: no-repeat;
-  background-position: center right;
+  background-position: 360px 13px;;
   border: 1px solid transparent;
 }
 
 .slide-title {
-  font-family: Roboto;
+  font-family: "Roboto", Arial, sans-serif;
   width: 520px;
-  margin-top: 70px;
-  margin-bottom: 26px;
+  margin-top: 71px;
+  margin-bottom: 27px;
+  padding-left: 2px;
   line-height: 55px;
   font-weight: 500;
   font-size: 55px;
 }
 
 .slide-paragraf {
-  font-family: Roboto;
+  font-family: "Roboto", Arial, sans-serif;
   width: 420px;
   font-size: 16px;
   line-height: 24px;
   font-weight: normal;
   color: #283136;
-  padding-left: 2px;
+  padding-left: 3px;
   margin-bottom: 56px;
 }
 
 .slide-button {
   text-transform: uppercase;
   background-color: #fb565a;
-  padding: 15px 54px;
+  margin-left: 4px;
+  padding: 16px 52px;
+  padding-right: 57px;
   width: 132px;
   height: 13px;
   color: #ffffff;
-  font-family: Roboto;
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
@@ -239,7 +240,7 @@ a {
 .slider-controls {
   position: absolute;
   top: 435px;
-  left: 681px;
+  left: 585px;
   height: 18px;
   z-index: 100;
   font-size: 0;
@@ -295,27 +296,31 @@ a {
   margin-bottom: 0px;
 }
 
-.services-item p {
-  font-size: 16px;
-  line-height: 24px;
-  color: #283136;
-  width: 275px;
-  margin-bottom: 48px;
-}
-
 .services-item h3 {
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 24px;
   line-height: 30px;
   font-weight: bold;
   text-transform: uppercase;
+  margin-top: 22px;
   margin-bottom: 15px;
 }
 
+.services-item p {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #283136;
+  width: 275px;
+  margin-bottom: 49px;
+}
+
 .services-item a {
+  font-family: "Roboto", Arial, sans-serif;
   text-transform: uppercase;
   font-size: 16px;
   line-height: 18px;
-  padding: 15px 42px 15px;
+  padding: 16px 42px 15px 40px;
   border-radius: 3px;
   color: #ffffff;
 }
@@ -372,7 +377,7 @@ a {
 
 .info-item-1 {
   width: 660px;
-  font-family: Roboto;
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
@@ -381,7 +386,7 @@ a {
 }
 
 .info-item-2 {
-  font-family: Roboto;
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: #283136;
@@ -390,7 +395,7 @@ a {
 }
 
 .info-item-3 {
-  font-family: Roboto;
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   text-transform: uppercase;
@@ -435,13 +440,17 @@ a {
   top: 107px;
 }
 
+.privilege-item img {
+  padding-top: 10px;
+}
+
 .privilege-item p {
   font-size: 16px;
   line-height: 24px;
   font-weight: bold;
   text-transform: uppercase;
-  padding-left: 10px;
-  margin-top: 45px;
+  padding-left: 14px;
+  margin-top: 34px;
   margin-bottom: 50px;
 }
 
@@ -450,14 +459,18 @@ a {
 }
 
 .privilege-item dt {
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 45px;
   line-height: 10.06px;
-  font-weight: bold;
+  font-weight: 500;
   text-transform: uppercase;
-  margin-bottom: 35px;
+  margin-top: 8px;
+  margin-right: 18px;
+  margin-bottom: 37px;
 }
 
 .privilege-item dd {
+  font-family: "Roboto", Arial, sans-serif;
   margin: 0px;
   color: #283136;
   font-size: 16px;
@@ -549,7 +562,6 @@ a {
   width: 100%;
   height: 416px;
   background-image: url("../img/map.png");
-  margin-top: 50px;
   margin-bottom: 50px;
 }
 
@@ -567,7 +579,7 @@ a {
   position: absolute;
   padding: 30px 50px;
   top: 53px;
-  left: 140px;
+  left: 43px;
   width: 220px;
   height: 250px;
   background-color: white;
@@ -576,8 +588,9 @@ a {
 .contacts-item .message {
   display: block;
   text-transform: uppercase;
-  font-family: Roboto;
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
+  font-weight: 500;
   line-height: 18px;
   padding-top: 18px;
   padding-left: 45px;
@@ -596,32 +609,34 @@ a {
   margin-bottom: 38px;
 }
 
+.contacts-item .adress {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: #666666;
+}
+
 .contacts-item .tel {
-  font-family: Roboto;
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 18px;
   color: #666666;
 }
 
 .contacts-item .bold {
+  font-family: "Roboto", Arial, sans-serif;
   text-transform: uppercase;
   font-size: 18px;
   line-height: 30px;
-  font-weight: bold;
-  margin-bottom: 25px;
-}
-
-.adress {
-  font-family: Roboto;
-  font-size: 16px;
-  line-height: 18px;
-  color: #666666;
+  font-weight: 500;
+  margin-top: 21px;
+  margin-bottom: 22px;
 }
 
 .contacts .map-marker {
   position: absolute;
-  top: 87px;
-  left: 822px;
+  top: 90px;
+  left: 725px;
 }
 
 .footer-main {
@@ -639,13 +654,15 @@ a {
   display: flex;
   justify-content: left;
   width: 400px;
-  margin-left: 44px;
+  margin-left: 22px;
   padding: 0;
   list-style: none;
 }
 
 .footer-main li {
   position: relative;
+  padding-top: 5px;
+  margin-right: 2px;
 }
 
 .footer-main a {
@@ -668,34 +685,24 @@ a {
 .footer-main img {
   position: absolute;
   top: 30px;
-  left: 35px;
-}
-
-.footer-main img:nth-child(1) {
-  left: 25px;
-}
-
-.footer-main img:nth-child(2) {
-  left: 20px;
-}
-
-.footer-main img:nth-child(3) {
-  left: 30px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .sale h3 {
-  font-family: Roboto;
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 36px;
   line-height: 36px;
-  font-weight: bold;
+  font-weight: 500;
   margin-top: 25px;
-  margin-bottom: -7px;
+  margin-bottom: -6px;
 }
 
 .sale p {
-  font-family: Roboto;
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 22px;
+  padding-left: 2px;
 }
 
 
@@ -884,7 +891,7 @@ a {
 }
 
 .title-shop {
-  font-family: Roboto;
+  font-family: "Roboto", Arial, sans-serif;
   padding-left: 260px;
   padding-right: 20px;
   padding-top: 20px;
@@ -897,7 +904,7 @@ a {
 }
 
 .title-shop h2 {
-  font-family: Roboto;
+  font-family: "Roboto", Arial, sans-serif;
   font-weight: 500px;
   font-size: 55px;
 }
@@ -920,7 +927,7 @@ a {
 }
 
 .filter-item legend {
-  font-family: Roboto;
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
   text-transform: uppercase;
@@ -1007,7 +1014,7 @@ a {
 }
 
 .price legend {
-  font-family: Roboto;
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 18px;
   line-height: 30px;
   font-weight: 500;
