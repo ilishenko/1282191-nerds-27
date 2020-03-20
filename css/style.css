@@ -247,6 +247,7 @@ a {
 
 .slider-controls label {
   display: inline-block;
+  vertical-align: middle;
   width: 4px;
   height: 4px;
   margin-right: 27px;
@@ -819,6 +820,7 @@ a {
 
 .user-item-container {
   display: inline-block;
+  vertical-align: middle;
   width: 360px;
   margin-bottom: 30px;
 }
@@ -978,6 +980,7 @@ a {
   width: 50%;
   font-size: 16px;
   text-transform: uppercase;
+  vertical-align: middle;
 }
 
 .price-controls input {
