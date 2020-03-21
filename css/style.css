@@ -124,9 +124,8 @@ a {
 .content {
   /*width: 1160px; */
   width: 100%;
-  margin: 0 auto;
-  padding-left: 0px;
-  padding-right: 0px;
+  margin: 0;
+  padding: 0;
 }
 
 .header-top-container-2 {
@@ -164,7 +163,7 @@ a {
   vertical-align: middle;
   background-image: url("../img/slide1.png");
   background-repeat: no-repeat;
-  background-position: 434px 13px;;
+  background-position: 420px 13px;;
   border: 1px solid transparent;
 }
 
@@ -280,7 +279,10 @@ a {
 
 
 .services {
-  margin-left: 44px;
+  width: 1160px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
   margin-bottom: 29px;
   padding-bottom: 95px;
   display: flex;
@@ -366,7 +368,10 @@ a {
 
 .info-privilege {
   display: flex;
-  margin-left: 40px;
+  width: 1160px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
   padding-bottom: 50px;
 }
 
@@ -479,7 +484,9 @@ a {
 
 .works {
   width: 1160px;
-  margin-left: 42px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
   margin-bottom: 80px;
   border-top: 2px solid #eeeeee;
   border-bottom: 2px solid #eeeeee;
@@ -896,29 +903,45 @@ a {
   padding-right: 20px;
   padding-top: 20px;
   padding-bottom: 55px;
+  background-color: #eeeeee;
 }
 
-.site-nav .now-catalog {
-  padding-bottom: 10px;
-  border-bottom: 2px solid #fb565a;
+.site-nav {
+  position: relative;
+}
+
+.site-nav .now-catalog::before {
+  content="";
+  position: absolute;
+  width: 74px;
+  height: 2px;
+  background-color: #fb565a;
+  top: 10px;
+  left: 0px;
+  /*border-bottom: 2px solid #fb565a;*/
 }
 
 .title-shop h2 {
   font-family: "Roboto", Arial, sans-serif;
   font-weight: 500px;
   font-size: 55px;
+  margin: 0 auto;
+  padding: 0;
+  padding-left: 65px;
+  padding-top: 49px;
+  padding-bottom: 49px;
 }
 
 .flex-price-form {
   width: 260px;
-  margin-right: 100px;
+  margin-right: 5px;
 }
 
 .filter-item {
   margin: 0;
   padding: 0;
   border: none;
-  margin-bottom: 60px;
+  margin-bottom: 56px;
 }
 
 .range-filter {
@@ -929,9 +952,9 @@ a {
 .filter-item legend {
   font-family: "Roboto", Arial, sans-serif;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 30px;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .range-controls {
@@ -1130,7 +1153,8 @@ background-image: url("../img/checkbox-on.png");
 }
 
 .submit-1 {
-  font-size: Roboto;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
   text-transform: uppercase;
   line-height: 18px;
   font-weight: 500;
@@ -1169,10 +1193,11 @@ background-image: url("../img/checkbox-on.png");
 
 .flex-price {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  max-width: 1160px;
   margin: 0 auto;
-  margin-left: 90px;
-  margin-top: 0px;
+  margin-left: 108px;
+  margin-top: 55px;
 }
 
 .price {
@@ -1185,21 +1210,33 @@ background-image: url("../img/checkbox-on.png");
 }
 
 .gallery-project ul {
+  max-width: 760px;
+  padding: 0px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   text-decoration: none;
   list-style: none;
+
 }
 
 .gallery-project .sort {
-  margin-top: 0px;
+  margin: 0 auto;
   display: flex;
-  width: 760px;
+  flex-wrap: wrap;
+  max-width: 800px;
   text-transform: uppercase;
   justify-content: space-between;
-  margin-left: 40px;
   align-items: center;
+  margin-bottom: 39px;
+}
+
+.sort h3 {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 500;
+  margin-top: 3px;
 }
 
 .gallery-project .sort-container {
@@ -1208,6 +1245,7 @@ background-image: url("../img/checkbox-on.png");
   width: 360px;
   display: flex;
   justify-content: space-between;
+  margin-top: -13px;
 }
 
 .sort-item-1 {
@@ -1288,7 +1326,7 @@ background-image: url("../img/checkbox-on.png");
 .gallery-project-1 li {
   position: relative;
   padding-top: 40px;
-  margin-bottom: 33px;
+  margin-bottom: 30px;
 }
 
 .gallery-project-1 li::before {
@@ -1362,6 +1400,8 @@ background-image: url("../img/checkbox-on.png");
 }
 
 .gallery-project .paginator {
+  margin-top: 28px;
+  margin-bottom: 59px;
   min-width: 444px;
   text-align: left;
   display: flex;
@@ -1382,7 +1422,9 @@ background-image: url("../img/checkbox-on.png");
   padding: 0 20px;
   background-color: #eeeeee;
   color: #000000;
-  font-weight: 600;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
   text-transform: uppercase;
   text-align: center;
   vertical-align: middle;
