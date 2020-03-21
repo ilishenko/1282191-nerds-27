@@ -239,7 +239,7 @@ a {
 .slider-controls {
   position: absolute;
   top: 435px;
-  left: 585px;
+  left: 660px;
   height: 18px;
   z-index: 100;
   font-size: 0;
@@ -627,7 +627,7 @@ a {
   position: absolute;
   padding: 30px 50px;
   top: 53px;
-  left: 110px;
+  left: 117px;
   width: 220px;
   height: 250px;
   background-color: white;
@@ -683,8 +683,8 @@ a {
 
 .contacts .map-marker {
   position: absolute;
-  top: 90px;
-  left: 725px;
+  top: 88px;
+  left: 798px;
 }
 
 .footer-main {
@@ -944,14 +944,14 @@ a {
 
 .title-shop {
   font-family: "Roboto", Arial, sans-serif;
-  padding-left: 314px;
+  padding-left: 268px;
   padding-right: 20px;
   padding-top: 20px;
   padding-bottom: 55px;
   background-color: #eeeeee;
 }
 
-.site-nav {
+.site-nav .now-catalog {
   position: relative;
 }
 
@@ -961,8 +961,8 @@ a {
   width: 74px;
   height: 2px;
   background-color: #fb565a;
-  top: 100px;
-  left: 100px;
+  top: 30px;
+  left: 30px;
 }
 
 .title-shop h2 {
@@ -1242,7 +1242,7 @@ background-image: url("../img/checkbox-on.png");
   justify-content: space-between;
   max-width: 1160px;
   margin: 0 auto;
-  margin-left: 164px;
+  margin-left: 118px;
   margin-top: 55px;
 }
 
