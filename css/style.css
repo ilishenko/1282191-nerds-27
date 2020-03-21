@@ -64,7 +64,7 @@ a {
 .site-nav {
   max-width: 645px;
   padding-top: 10px;
-  padding-left: 50px;
+  padding-left: 45px;
 }
 
 .site-nav li {
@@ -137,7 +137,6 @@ a {
 }
 
 .slider {
-  box-sizing: border-box;
   width: 1160px;
   margin: 0 auto;
   height: 426px;
@@ -147,10 +146,11 @@ a {
 }
 
 .slider-list {
-  height: 414px;
+  height: 427px;
   margin: 0;
   padding: 0;
   list-style: none;
+  margin-left: 20px;
 }
 
 .slide {
@@ -163,7 +163,7 @@ a {
   vertical-align: middle;
   background-image: url("../img/slide1.png");
   background-repeat: no-repeat;
-  background-position: 420px 13px;;
+  background-position: 434px 13px;;
   border: 1px solid transparent;
 }
 
@@ -279,6 +279,7 @@ a {
 
 
 .services {
+  position: relative;
   width: 1160px;
   padding-left: 20px;
   padding-right: 20px;
@@ -287,11 +288,26 @@ a {
   padding-bottom: 95px;
   display: flex;
   justify-content: left;
-  border-bottom: 2px solid #eeeeee;
+  border-bottom: 2px solid transparent;
+}
+
+.services::after {
+  content: "";
+  position: absolute;
+  width: 1160px;
+  height: 2px;
+  background-image: url("../img/line.png");
+  background-repeat: no-repeat;
+  top: 427px;
+  left: 40px;
 }
 
 .services-item {
   margin-right: 100px;
+}
+
+.services-item:nth-child(1) {
+  margin-left: 23px;
 }
 
 .services-item img {
@@ -378,6 +394,7 @@ a {
 .info {
   width: 722px;
   margin-right: 140px;
+  margin-left: 20px;
 }
 
 .info-item-1 {
@@ -483,13 +500,36 @@ a {
 }
 
 .works {
+  position: relative;
   width: 1160px;
   padding-left: 20px;
   padding-right: 20px;
   margin: 0 auto;
   margin-bottom: 80px;
-  border-top: 2px solid #eeeeee;
-  border-bottom: 2px solid #eeeeee;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+}
+
+.works::before {
+  content: "";
+  position: absolute;
+  width: 1160px;
+  height: 2px;
+  background-image: url("../img/line.png");
+  background-repeat: no-repeat;
+  top: -3px;
+  left: 40px;
+}
+
+.works::after {
+  content: "";
+  position: absolute;
+  width: 1160px;
+  height: 2px;
+  background-image: url("../img/line.png");
+  background-repeat: no-repeat;
+  top: 179px;
+  left: 40px;
 }
 
 .works ul {
@@ -497,6 +537,7 @@ a {
   display: flex;
   margin: 0;
   padding: 0;
+  margin-left: 20px;
 }
 
 .active-works {
@@ -586,7 +627,7 @@ a {
   position: absolute;
   padding: 30px 50px;
   top: 53px;
-  left: 43px;
+  left: 110px;
   width: 220px;
   height: 250px;
   background-color: white;
@@ -691,9 +732,13 @@ a {
 
 .footer-main img {
   position: absolute;
-  top: 30px;
+  top: 43%;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.footer-main img:active {
+  opacity: 0.3;
 }
 
 .sale h3 {
@@ -899,7 +944,7 @@ a {
 
 .title-shop {
   font-family: "Roboto", Arial, sans-serif;
-  padding-left: 260px;
+  padding-left: 314px;
   padding-right: 20px;
   padding-top: 20px;
   padding-bottom: 55px;
@@ -911,14 +956,13 @@ a {
 }
 
 .site-nav .now-catalog::before {
-  content="";
+  content= "";
   position: absolute;
   width: 74px;
   height: 2px;
   background-color: #fb565a;
-  top: 10px;
-  left: 0px;
-  /*border-bottom: 2px solid #fb565a;*/
+  top: 100px;
+  left: 100px;
 }
 
 .title-shop h2 {
@@ -941,12 +985,12 @@ a {
   margin: 0;
   padding: 0;
   border: none;
-  margin-bottom: 56px;
+  margin-bottom: 53px;
 }
 
 .range-filter {
   width: 260px;
-  margin-top: 49px;
+  margin-top: 48px;
 }
 
 .filter-item legend {
@@ -981,7 +1025,7 @@ a {
 
 .range-controls .toggle {
   position: absolute;
-  top: 31px;
+  top: 30px;
   left: 0;
   width: 4px;
   height: 4px;
@@ -994,11 +1038,11 @@ a {
 }
 
 .range-controls .toggle-min {
-  left: 50px;
+  left: 15px;
 }
 
 .range-controls .toggle-max {
-  left: 110px;
+  left: 160px;
 }
 
 .price-controls {
@@ -1015,8 +1059,8 @@ a {
 
 .price-controls input {
   width: 60px;
-  padding: 8px 10px;
-  margin-left: 10px;
+  padding: 10px 10px;
+  margin-left: 7px;
   font-family: Roboto, Arial, sans-serif;
   font-size: 16px;
   text-align: center;
@@ -1033,7 +1077,7 @@ a {
 .price {
   border: none;
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 16px;
 }
 
 .price legend {
@@ -1042,7 +1086,7 @@ a {
   line-height: 30px;
   font-weight: 500;
   margin-left: -11px;
-  margin-bottom: 10px;
+  margin-bottom: 11px;
 }
 
 .price input[type="radio"] {
@@ -1110,8 +1154,9 @@ a {
 .price .checkbox::before {
   content: "";
   position: absolute;
-  left: -5px;
-  width: 23px;
+  top: -2px;
+  left: -9px;
+  width: 26px;
   height: 23px;
   background-image: url("../img/checkbox-off.png");
   background-repeat: no-repeat;
@@ -1159,10 +1204,11 @@ background-image: url("../img/checkbox-on.png");
   line-height: 18px;
   font-weight: 500;
   border: none;
-  padding: 20px 90px;
+  padding: 18px 90px 16px 90px;
   background-color: #eeeeee;
   cursor: pointer;
   border-radius: 3px;
+  margin-top: 4px;
 }
 
 .submit-1:hover {
@@ -1196,7 +1242,7 @@ background-image: url("../img/checkbox-on.png");
   justify-content: space-between;
   max-width: 1160px;
   margin: 0 auto;
-  margin-left: 108px;
+  margin-left: 164px;
   margin-top: 55px;
 }
 
@@ -1411,7 +1457,7 @@ background-image: url("../img/checkbox-on.png");
 .paginator li {
   margin: 0;
   padding: 0;
-  margin-right: 10px;
+  margin-right: 11px;
 }
 
 .paginator a {
