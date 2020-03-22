@@ -50,6 +50,7 @@ a {
 .menu-item-1 {
   width: 1160px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding-top: 10px;
@@ -90,8 +91,12 @@ a {
 
 .active:visited a,
 .active:active a {
-  color: #000000;
-  opacity: 0.3;
+  color: rgba(0, 0, 0, 0.3);
+
+}
+
+.basket .active:active svg {
+  fill: #a6a6a6;
 }
 
 .site-nav,
@@ -283,10 +288,10 @@ a {
   padding-bottom: 95px;
   display: flex;
   justify-content: left;
-  border-bottom: 2px solid #eeeeee;
+  border-bottom: 2px solid transparent;
 }
 
-/*.services::after {
+.services::after {
   content: "";
   position: absolute;
   width: 1160px;
@@ -295,7 +300,7 @@ a {
   background-repeat: no-repeat;
   top: 427px;
   left: 20px;
-}*/
+}
 
 .services-item {
   margin-right: 100px;
@@ -846,12 +851,14 @@ a {
 }
 
 .modal-title {
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 45px;
   line-height: 45px;
   margin-top: 70px;
 }
 
 .modal-text {
+  font-family: "Roboto", Arial, sans-serif;
   display: block;
   font-size: 16px;
   line-height: 18px;
@@ -912,6 +919,7 @@ a {
 }
 
 .button {
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
@@ -1128,9 +1136,9 @@ a {
   opacity: 1;
 }
 
-.btn-1:disabled ~ .btn[for="adaptive-item"]::before,
+/*.btn-1:disabled ~ .btn[for="adaptive-item"]::before,
 .btn-2:disabled ~ .btn[for="fixed-item"]::before,
-.btn-3:disabled ~ .btn[for="rubber-item"]::before,
+.btn-3:disabled ~ .btn[for="rubber-item"]::before,*/
 .btn-1:disabled ~ .btn[for="adaptive-item"],
 .btn-2:disabled ~ .btn[for="fixed-item"],
 .btn-3:disabled ~ .btn[for="rubber-item"] {
@@ -1179,11 +1187,11 @@ background-image: url("../img/checkbox-on.png");
   opacity: 1;
 }
 
-.btn-4:disabled ~ .checkbox[for="slider-field"]::before,
+/*.btn-4:disabled ~ .checkbox[for="slider-field"]::before,
 .btn-5:disabled ~ .checkbox[for="advantage-field"]::before,
 .btn-6:disabled ~ .checkbox[for="news-field"]::before,
 .btn-7:disabled ~ .checkbox[for="gallery-field"]::before,
-.btn-8:disabled ~ .checkbox[for="basket-field"]::before,
+.btn-8:disabled ~ .checkbox[for="basket-field"]::before,*/
 .btn-4:disabled ~ .checkbox[for="slider-field"],
 .btn-5:disabled ~ .checkbox[for="advantage-field"],
 .btn-6:disabled ~ .checkbox[for="news-field"],
