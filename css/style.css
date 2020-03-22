@@ -672,7 +672,7 @@ a {
 .contacts .map-marker {
   position: absolute;
   top: 88px;
-  left: 798px;
+  left: 778px;
 }
 
 .footer-main {
@@ -942,13 +942,13 @@ a {
 }
 
 .site-nav .now-catalog::before {
-  content= "";
+  content: "";
   position: absolute;
   width: 74px;
   height: 2px;
   background-color: #fb565a;
-  top: 30px;
-  left: 30px;
+  top: 28px;
+  left: 0px;
 }
 
 .title-shop h2 {
@@ -957,7 +957,7 @@ a {
   font-size: 55px;
   margin: 0 auto;
   padding: 0;
-  padding-left: 65px;
+  padding-left: 41px;
   padding-top: 49px;
   padding-bottom: 49px;
 }
@@ -1228,7 +1228,7 @@ background-image: url("../img/checkbox-on.png");
   justify-content: space-between;
   max-width: 1160px;
   margin: 0 auto;
-  margin-left: 118px;
+  margin-left: 95px;
   margin-top: 55px;
 }
 
