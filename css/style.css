@@ -73,7 +73,7 @@ a {
 
 .menu a {
   font-family: "Roboto", Arial, sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   color: #000000;
 }
 
@@ -92,11 +92,6 @@ a {
 .active:visited a,
 .active:active a {
   color: rgba(0, 0, 0, 0.3);
-
-}
-
-.basket .active:active svg {
-  fill: #a6a6a6;
 }
 
 .site-nav,
@@ -731,6 +726,10 @@ a {
 
 .footer-main a:active img {
   opacity: 0.3;
+}
+
+.footer-main .sale {
+  width: 560px;
 }
 
 .sale h3 {
