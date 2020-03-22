@@ -202,16 +202,16 @@ a {
   line-height: 24px;
   font-weight: normal;
   color: #283136;
-  margin-bottom: 56px;
+  margin-bottom: 39px;
 }
 
 .slide-button {
+  display: block;
   text-transform: uppercase;
   background-color: #fb565a;
-  padding: 16px 52px;
-  padding-right: 57px;
-  width: 132px;
-  height: 13px;
+  padding: 16px 57px 16px 52px;
+  width: 131px;
+  min-height: 13px;
   color: #ffffff;
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
@@ -234,7 +234,7 @@ a {
 .slider-controls {
   position: absolute;
   top: 435px;
-  left: 640px;
+  left: 631px;
   height: 18px;
   z-index: 100;
   font-size: 0;
