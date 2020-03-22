@@ -1114,22 +1114,22 @@ a {
   opacity: 0.1;
 }
 
-.btn-1:checked~.btn[for="adaptive-item"]::before,
-.btn-2:checked~.btn[for="fixed-item"]::before,
-.btn-3:checked~.btn[for="rubber-item"]::before {
+.btn-1:checked ~ .btn[for="adaptive-item"]::before,
+.btn-2:checked ~ .btn[for="fixed-item"]::before,
+.btn-3:checked ~ .btn[for="rubber-item"]::before {
   background-color: #4d4d4d;
   opacity: 0.4;
 }
 
-.btn-1:checked~.btn[for="adaptive-item"]:hover::before,
-.btn-2:checked~.btn[for="fixed-item"]:hover::before,
-.btn-3:checked~.btn[for="rubber-item"]:hover::before {
+.btn-1:checked ~ .btn[for="adaptive-item"]:hover::before,
+.btn-2:checked ~ .btn[for="fixed-item"]:hover::before,
+.btn-3:checked ~ .btn[for="rubber-item"]:hover::before {
   opacity: 1;
 }
 
-.btn-1:checked~.btn[for="adaptive-item"]:disabled::before,
-.btn-2:checked~.btn[for="fixed-item"]:disabled::before,
-.btn-3:checked~.btn[for="rubber-item"]:disabled::before {
+.btn-1:disabled ~ .btn[for="adaptive-item"]::before,
+.btn-2:disabled ~ .btn[for="fixed-item"]::before,
+.btn-3:disabled ~ .btn[for="rubber-item"]::before {
   opacity: 0.1;
 }
 
@@ -1175,11 +1175,11 @@ background-image: url("../img/checkbox-on.png");
   opacity: 1;
 }
 
-.btn-4:checked ~ .checkbox[for="slider-field"]:disabled::before,
-.btn-5:checked ~ .checkbox[for="advantage-field"]:disabled::before,
-.btn-6:checked ~ .checkbox[for="news-field"]:disabled::before,
-.btn-7:checked ~ .checkbox[for="gallery-field"]:disabled::before,
-.btn-8:checked ~ .checkbox[for="basket-field"]:disabled::before {
+.btn-4:disabled ~ .checkbox[for="slider-field"]::before,
+.btn-5:disabled ~ .checkbox[for="advantage-field"]::before,
+.btn-6:disabled ~ .checkbox[for="news-field"]::before,
+.btn-7:disabled ~ .checkbox[for="gallery-field"]::before,
+.btn-8:disabled ~ .checkbox[for="basket-field"]::before {
   opacity: 0.1;
 }
 
