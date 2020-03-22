@@ -129,7 +129,7 @@ a {
 
 .header-top-container-2 {
   width: 100%;
-  height: 426px;
+  min-height: 426px;
   margin: 0 auto;
   margin-bottom: 80px;
   background-color: #eeeeee;
@@ -283,10 +283,10 @@ a {
   padding-bottom: 95px;
   display: flex;
   justify-content: left;
-  border-bottom: 2px solid transparent;
+  border-bottom: 2px solid #eeeeee;
 }
 
-.services::after {
+/*.services::after {
   content: "";
   position: absolute;
   width: 1160px;
@@ -295,7 +295,7 @@ a {
   background-repeat: no-repeat;
   top: 427px;
   left: 20px;
-}
+}*/
 
 .services-item {
   margin-right: 100px;
@@ -688,6 +688,7 @@ a {
 
 .footer-main ul {
   display: flex;
+  flex-wrap: wrap;
   justify-content: left;
   width: 400px;
   padding: 0;
@@ -1129,7 +1130,10 @@ a {
 
 .btn-1:disabled ~ .btn[for="adaptive-item"]::before,
 .btn-2:disabled ~ .btn[for="fixed-item"]::before,
-.btn-3:disabled ~ .btn[for="rubber-item"]::before {
+.btn-3:disabled ~ .btn[for="rubber-item"]::before,
+.btn-1:disabled ~ .btn[for="adaptive-item"],
+.btn-2:disabled ~ .btn[for="fixed-item"],
+.btn-3:disabled ~ .btn[for="rubber-item"] {
   opacity: 0.1;
 }
 
@@ -1179,7 +1183,12 @@ background-image: url("../img/checkbox-on.png");
 .btn-5:disabled ~ .checkbox[for="advantage-field"]::before,
 .btn-6:disabled ~ .checkbox[for="news-field"]::before,
 .btn-7:disabled ~ .checkbox[for="gallery-field"]::before,
-.btn-8:disabled ~ .checkbox[for="basket-field"]::before {
+.btn-8:disabled ~ .checkbox[for="basket-field"]::before,
+.btn-4:disabled ~ .checkbox[for="slider-field"],
+.btn-5:disabled ~ .checkbox[for="advantage-field"],
+.btn-6:disabled ~ .checkbox[for="news-field"],
+.btn-7:disabled ~ .checkbox[for="gallery-field"],
+.btn-8:disabled ~ .checkbox[for="basket-field"] {
   opacity: 0.1;
 }
 
@@ -1393,13 +1402,6 @@ background-image: url("../img/checkbox-on.png");
 .gallery-project-item:hover div {
   display: block;
 }
-
-/*.gallery-project-item h3 {
-  color: #000000;
-  font-size: 18px;
-  line-height: 30px;
-  text-transform: uppercase;
-}*/
 
 .gallery-project-item p {
   font-size: 16px;
