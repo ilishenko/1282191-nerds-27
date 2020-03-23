@@ -933,7 +933,9 @@ a {
 
 .title-shop {
   font-family: "Roboto", Arial, sans-serif;
-  padding-left: 268px;
+  width: 1160px;
+  margin: 0 auto;
+  padding-left: 195px;
   padding-right: 20px;
   padding-top: 20px;
   padding-bottom: 55px;
